@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Tiwari | Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/22b66672aa.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        /** @type {import('tailwindcss').Config} */
+        tailwind.config = {
+            content: ["./*.{html,js}"],
+          theme: {
+            extend: {
+                colors: {
+                    red: '#BF3325',
+                    aorange: '#581C87',
+                    mblack: '#2E2E2E',
+                    adark: '#060606BC',
+                    bwhite: 'rgb(203 213 225)',
+                    lgrey: '#F7F7F7',
+                    bgray: '#1A1A1A',
+                    bgraytrans: '#000000A2',
+                    bluetrans: '#0F172AA2',
+                    bgblue: '#0F173F',
+                    teal: '#005779',
+                    beige: '#C0A062',
+                    bgpurple: '#231557',
+                    lpurple: '#6524AA'
+                },
+                screens : {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1280px',
+                    xxl: '1440px'
+            },
+        },
+        Plugins:[],
+        }
+    }
+    </script>
+    
+</head>
+<body class="bg-black">
+    
+    <!-- NAVIGATION AREA -->
+    <div class="navArea bg-black/90 sticky top-0 text-bwhite px-8 flex justify-between items-center h-16">
+        <div class="flex space-x-4 px-4">
+            <a href="" class="secondary-font font-bold text-xl">
+                <span class="secondary-font animate-characters text-aorange text-4xl">A</span>RPIT TIWARI
+            </a>
+        </div>
+
+        <!-- NAVBAR -->
+        <div id="nav_menu" class="w-1/2 hidden lg:flex justify-between font-semibold decoration-lpurple py-2">
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#home">Home</a>
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#about">About</a>
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#project">Projects</a>
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#resume">Resume</a>
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#contact">Contact</a>
+        </div>
+
+        <!-- NAV LAST -->
+        <div id="menuToggle" class="nav lg:hidden">
+            <input class="lg:hidden" type="checkbox" id="myCheckbox"/>
+            <span class="lg:hidden" id="span1"></span>
+            <span class="lg:hidden" id="span2"></span>
+            <span class="lg:hidden" id="span3"></span>
+        </div>
+        <ul id="dropdown1" class="dropdown text-center align-right w-28 absolute right-0 top-10 bg-black/90 space-y-6 justify-around">
+            <br>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#home">Home</a></li>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#about">About</a></li>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#project">Projects</a></li>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#resume">Resume</a></li>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#contact">Contact</a></li>
+            <br>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <div id="home" class="shadow-xl shadow-black h-screen bg-[url('./assets/bgi.jpg')] md:bg-[url('./assets/bgm.jpg')] lg:bg-[url('./assets/bg.jpg')] bg-contain md:bg-contain lg:bg-cover bg-center bg-no-repeat md:py-4 flex items-center justify-center">
+        <div class="hero-title content-center text-center">
+            <div class="flex flex-col items-center justify-center">
+                <h2 class="secondary-font w-full md:w-5/6 lg:w-11/12 text-6xl md:px-12 py-2 font-bold text-slate-300 sm:mx-2 md:mx-16 px-2">WELCOME TO MY <span class="secondary-font text-6xl text-bwhite font-bold py-3">PORTFOLIO</span></h2>
+                <div class="flex justify-around align-center h-10 w-full m-2">
+                    <a href="#about">
+                        <div class="arrows items-center h-6 object-contain">
+                            <div class="scroll-down"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REST -->
+    <div class="bg-gradient-to-r from-cyan-900 to-fuchsia-950 items-center flex justify-center flex-col py-20 space-y-6 lg:space-y-16">
+
+        <!-- ABOUT -->
+
+        <h2 class="secondary-font text-3xl lg:text-5xl font-bold text-bwhite my-6">About me</h2>
+        <div id="about" class="bg-beige w-full text-black py-12 md:py-20 shadow-lg shadow-black md:px-8 lg:px-16 px-4 space-y-4">
+            <div class="space-y-2">
+                <i class="fa fa-handshake-o text-2xl" aria-hidden="true"></i>
+                <h4 class="text-lg lg:text-3xl font-semibold">Hi ! I'm Arpit Tiwari</h4>
+                <h6 class="text-lg lg:text-2xl font-bold text-slate-800">A Full-Stack Web-Developer based in Bengaluru</h6>
+                <p class="text-sm md:text-lg">I have been working around Web-Designing for more than a year now. I enjoy building everything from simplistic business design to rich interactive web applications. I hope you find everything about me here. I am passionate about Web-Development and have worked on several tools including:
+                    React, Express, NodeJs, Tailwind, Bootstrap, MongoDB, MySQL, Git, GitHub. 
+    
+                            I'm an Engineering Graduate from Government Engineering College-Bilaspur, in Electrical Engineering. I've made numerous skill testing projects in the technologies mentioned. More recently, I've been Certified from iNeuron as a Full-Stack Web-Developer.
+                </p>
+                <div class="w-1/2 text-left my-4 flex flex-col justify-end font-semibold">
+                    <h6 class="text-slate-800 font-bold text-sm lg:text-lg">Connect with me..</h6>
+                    <p><span class="text-slate-800 font-bold">Email @</span> arpittiwari.in237@gmail.com</p>
+                    <a href=""><span class="text-slate-800 font-bold">Linkedin - </span> arpittiwari237</a>
+                </div>
+                <a href="#contact" class="my-4 flex justify-end"><span class="text-beige bg-slate-900 px-5 py-2 rounded-sm font-bold">drop a message - <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+            </div>
+        </div>
+        <!-- PROJECTS -->
+        <h2 id="project" class="secondary-font text-3xl lg:text-5xl text-bwhite font-bold my-12">Work & Projects</h2>
+        
+            <!-- PROJECT 1 -->
+            <div class="project bg-black/80 w-full md:w-11/12 flex flex-col md:flex-row items-center text-center md:text-left shadow-lg shadow-black transition-smooth rounded-sm">
+                <div class="md:float-left w-11/12 md:w-3/5 py-5 px-2 md:px-8 space-y-5">
+                    <h4 class="font-semibold text-beige text-3xl text-center lg:text-left">FULL STACK ECOMMERCE APPLICATION</h4>
+                    <p class="font-semibold no-scrollbar text-black h-60 overflow-x-hidden bg-zinc-200 rounded-sm p-5">A comprehensive application featuring REST API-product management, Secure user authentication, Efficient cart management, Separate user and admin Dashboard, Advanced product filters, and Seamless integration with Razor-Pay payment gateway for secure transactions. Leveraging MongoDB for storage and Mongoose for simplified communication, I prioritized user-friendly design and implemented S.M.T.P. contact functionality for enhanced customer support. It demonstrates my proficiency in full-stack development and showcases my ability to create elaborate, robust and user friendly web applications.</p>
+                    <div class="flex space-x-4 justify-center font-bold lg:justify-between">
+                        <a href="github.com/Arpitxd41/ecommerceApplication" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">GITHUB</button>
+                        </a>
+                        <a href="https://ecommerce-application-by-arpit.vercel.app" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">PREVIEW</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:float-right w-full md:w-2/5 bg-black p-5">
+                    <img class="object-cover h-80" src="./assets/ecommerce.png" alt="">
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project bg-black/80 w-full md:w-11/12 flex flex-col md:flex-row items-center text-center md:text-left shadow-lg shadow-black transition-smooth rounded-sm">
+                <div class="md:float-left w-11/12 md:w-3/5 py-5 px-2 md:px-8 space-y-5">
+                    <h4 class="font-semibold text-beige text-3xl text-center lg:text-left">JAVASCRIPT ASSIGNMENTS</h4>
+                    <p class="font-semibold no-scrollbar text-black h-60 overflow-x-hidden bg-zinc-200 rounded-sm p-5">Task oriented projects in JavaScript
+                        enriched my skills as a JS Developer and helped me to write better and optimised code. Working with Syntax and Basic Concepts, DOM Manipulation, Events, Asynchronous Programming among others. <br>
+                        The Projects include :- <br />
+                        - Case Convertor,<br />
+                        - Ramdom Password Generator,<br />
+                        - Game of Rock, Paper & Scissor,<br />
+                        - QR code generator (using API) and more..</p>
+                    <div class="flex space-x-4 justify-center font-bold lg:justify-between">
+                        <a href="github.com/Arpitxd41/javaScriptAssignments" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">GITHUB</button>
+                        </a>
+                        <a href="https://passwordgeneratorbyart.netlify.app/" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">PREVIEW</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:float-right w-full md:w-2/5 bg-black p-5">
+                    <img class="" src="./assets/js.png" alt="">
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project bg-black/80 w-full md:w-11/12 flex flex-col md:flex-row items-center text-center md:text-left shadow-lg shadow-black transition-smooth rounded-sm">
+                <div class="md:float-left w-11/12 md:w-3/5 py-5 px-2 md:px-8 space-y-5">
+                    <h4 class="font-semibold text-beige text-3xl text-center lg:text-left">REACT ASSIGNMENTS</h4>
+                    <p class="font-semibold no-scrollbar text-black h-60 overflow-x-hidden bg-zinc-200 rounded-sm p-5">Engaged in a comprehensive project utilizing the React UI Development Library, where I delved into fundamental concepts such as Rendering, Scripting, and Component-Based Architecture. My proficiency with React extends to leveraging essential hooks like use-state, use-effects, and use-callback, demonstrating adeptness in implementing widely utilized concepts within React projects.</p>
+                    <div class="flex space-x-4 justify-center font-bold lg:justify-between">
+                        <a href="github.com/Arpitxd41/ReactJS" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">GITHUB</button>
+                        </a>
+                        <a href="https://spacexhomepage.netlify.app" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">PREVIEW</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:float-right w-full md:w-2/5 bg-black p-5">
+                    <img class="object-cover h-80" src="./assets/spacex.png" alt="">
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="project bg-black/80 w-full md:w-11/12 flex flex-col md:flex-row items-center text-center md:text-left shadow-lg shadow-black transition-smooth rounded-sm">
+                <div class="md:float-left w-11/12 md:w-3/5 py-5 px-2 md:px-8 space-y-5">
+                    <h4 class="font-semibold text-beige text-3xl text-center lg:text-left">WORKING WITH TAILWIND</h4>
+                    <p class="font-semibold no-scrollbar text-black h-60 overflow-x-hidden bg-zinc-200 rounded-sm p-5">I have cloned some websites using Tailwind-CSS framework which is known for better control in styling from within the element. It can also be used along with style-sheet, However my work on cloning is limited only to the tailwind. It can be used for efficient styling and making websites better & faster. <br /> - Shopify<br /> - Rode<br /> - Paytm </p>
+                    <div class="flex space-x-4 justify-center font-bold lg:justify-between">
+                        <a href="github.com/Arpitxd41/Work_in_Tailwind" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">GITHUB</button>
+                        </a>
+                        <a href="https://tailwindclone2byart.netlify.app/" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">PREVIEW</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:float-right w-full md:w-2/5 bg-black p-5">
+                    <img class="" src="./assets/tailwind.png" alt="">
+                </div>
+            </div>
+
+            <!-- PROJECT 5 -->
+            <div class="project bg-black/80 w-full md:w-11/12 flex flex-col md:flex-row items-center text-center md:text-left shadow-lg shadow-black transition-smooth rounded-sm">
+                <div class="md:float-left w-11/12 md:w-3/5 py-5 px-2 md:px-8 space-y-5">
+                    <h4 class="font-semibold text-beige text-3xl text-center lg:text-left">HTML & CSS</h4>
+                    <p class="font-semibold no-scrollbar text-black h-60 overflow-x-hidden bg-zinc-200 rounded-sm p-5">Projects purely based on HTML & CSS, building different kinds of web-pages.The features are screen responsiveness using HTML and CSS. I've utilized a range of HTML and CSS concepts like flexbox, box model, Document Object Model (DOM), media embedding, Formatting Document, CSS-Selectors, forms, decorations, meta-data, and more to create diverse web pages. These projects have been instrumental in honing my programming and web development skills, sparking my passion for the field.</p>
+                    <div class="flex space-x-4 justify-center font-bold lg:justify-between">
+                        <a href="https://github.com/Arpitxd41/LCOProjects" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">GITHUB</button>
+                        </a>
+                        <a href="https://landingpagebyart.netlify.app" class='w-1/2 h-fit text-black border-2 border-beige bg-beige rounded-sm px-8 py-2 transition ease-in-out hover:bg-zinc-950 hover:text-beige text-center'>
+                            <button class="">PREVIEW</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:float-right w-full md:w-2/5 bg-black p-5">
+                    <img class="" src="./assets/htmlcss.png" alt="">
+                </div>
+            </div>
+
+        <!-- CV BUTTON -->
+        <div id="resume" class="hidden resumeDownload justify-center md:flex py-12">
+            <a href="" class="">
+                <button id="downloadButton" class="border-2 border-black font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
+                shadow-lg shadow-black bg-black text-white">DOWNLOAD CV</button>
+            </a>
+        </div>
+
+        <!-- RESUME -->
+        <h2 class="hidden md:flex secondary-font text-5xl text-bwhite font-bold lg:block">Resume</h2>
+        <div class="hidden md:flex primary-font w-full py-12 space-x-2 text-black">
+            <div class="w-full px-8 py-16 bg-white/70 text-center space-y-4">
+                <div class="flex flex-col space-y-8">
+                    <h2 class="primary-font font-bold text-5xl lg:text-6xl my-8">Arpit Tiwari</h2>
+                    <div class="grid grid-cols-3 gap-2 text-left
+                    lg:grid-cols-4">
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                            <span><i class="fa fa-briefcase text-black" aria-hidden="true"></i> Full Stack Developer</span>
+                        </p>
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                            <span><i class="fa fa-map-marker text-black" aria-hidden="true"></i> Bengaluru, India</span>
+                        </p>
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                            <span><i class="fa fa-envelope text-black" aria-hidden="true"></i> arpittiwari.in237@gmail.com</span>
+                        </p>
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                            <span><i class="fa fa-phone text-black" aria-hidden="true"></i> +91 99931-40470</span>
+                        </p>
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                            <span><i class="fa fa-globe text-black text-xl" aria-hidden="true"></i> portfolio-arpit.netlify.app</span>
+                        </p>
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                            <span><i class="fa fa-linkedin-square text-black text-xl" aria-hidden="true"></i> linkedin.com/in/arpittiwari237</span>
+                        </p>
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                            <span><i class="fa fa-github text-black text-xl" aria-hidden="true"></i> github.com/arpitxd41</span>
+                        </p>
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                            <span><i class="fa fa-skype text-black text-xl" aria-hidden="true"></i> arpittiwari.in237@gmail.com</span>
+                        </p>
+                        <p class="primary-font text-md tracking-wider space-x-4 font-semibold">
+                        </p>
+                    </div>
+                </div>
+                <hr class="border-teal border" />
+                <!-- CV ( SKILLS ) -->
+                <div class="w-full flex flex-col lg:flex-row justify-center space-y-2">
+                    <h4 class="text-left w-1/5 primary-font text-3xl font-bold"><i class="fa fa-caret-right font-bold" aria-hidden="true"></i> Skills :</h4>
+                    <div class="text-white font-bold flex flex-auto flex-wrap">
+                        <p class="skill-box">HTML-5</p>
+                        <p class="skill-box">CSS-3</p>
+                        <p class="skill-box">JSX</p>
+                        <p class="skill-box">Tailwind-CSS</p>
+                        <p class="skill-box">Bootstrap</p>
+                        <p class="skill-box">React</p>
+                        <p class="skill-box">JavaScript</p>
+                        <p class="skill-box">mongoDB</p>
+                        <p class="skill-box">mongoose-ODM</p>
+                        <p class="skill-box">NodeJS</p>
+                        <p class="skill-box">ExpressJS</p>
+                        <p class="skill-box">SMTP</p>
+                        <p class="skill-box">JWT</p>
+                        <p class="skill-box">REST-api</p>
+                        <p class="skill-box">Prisma-ORM</p>
+                        <p class="skill-box">Babel</p>
+                        <p class="skill-box">Ngrok</p>
+                        <p class="skill-box">DSA</p>
+                        <p class="skill-box">Linux</p>
+                        <p class="skill-box">Github</p>
+                        <p class="skill-box">Postman</p>
+                        <p class="skill-box">Communication</p>
+                        <p class="skill-box">Public Speaking</p>
+                        <p class="skill-box">Literary Skills</p>
+                        <p class="skill-box">UI-Dev</p>
+                    </div>
+                </div>
+                <hr class="border-teal border" />
+                <!-- CV ( PROJECTS ) -->
+                <div class="w-full flex flex-row justify-center">
+                    <div class="text-left space-y-2">
+                        <h4 class="text-left w-1/6 primary-font text-3xl font-bold lg:py-5"><i class="fa fa-caret-right font-bold" aria-hidden="true"></i> Projects :</h4>
+                        <div class="space-y-2">
+                            <h5 class="primary-font bg-teal text-white pl-5 py-1 font-bold text-2xl">Portfolio Website</h5>
+                            <p class="font-semibold text-md lg:text-lg pl-5">Embarked on my inaugural project by developing a comprehensive portfolio from the ground up. The design ethos was centered around minimalism, employing basic HTML as the foundation, complemented by Tailwind CSS for styling, including captivating animations. Leveraging JavaScript, I enhanced interactivity and responsiveness, ensuring seamless user experiences. Additionally, integrated an S.M.T.P. server to facilitate direct communication via the message section, fostering personalized engagement.</p>
+                            <a href="portfolio-arpit.netlify.app" class="text-teal text-md lg:text-lg font-semibold pl-5"><i class="fa fa-external-link-square text-black" aria-hidden="true"></i> portfolio-arpit.netlify.app</a>
+                        </div>
+                        <div class="my-5 space-y-2">
+                            <h5 class="primary-font bg-teal text-white pl-5 py-1 font-bold text-2xl">MERN STACK e-commerce application</h5>
+                            <p class="font-semibold text-md lg:text-lg pl-5">A comprehensive application featuring REST API-product management, Secure user authentication, Efficient cart management, Separate user and admin Dashboard, Advanced product filters, and Seamless integration with Razor-Pay payment gateway for secure transactions. Leveraging MongoDB for storage and Mongoose for simplified communication, I prioritized user-friendly design and implemented S.M.T.P. contact functionality for enhanced customer support. It demonstrates my proficiency in full-stack development and showcases my ability to create elaborate, robust and user friendly web applications.</p>
+                            <a href="https://ecommerce-application-by-arpit.vercel.app" class="text-teal text-md lg:text-lg font-bold pl-5"><i class="fa fa-external-link-square text-black" aria-hidden="true"></i> ecommerce-application-by-arpit.vercel.app</a>
+                        </div>
+                        <div class="my-5 space-y-2">
+                            <h5 class="primary-font bg-teal text-white pl-5 py-1 font-bold text-2xl">JavaScript Assignments</h5>
+                            <p class="font-semibold text-md lg:text-lg pl-5">Java-script Assignments to test my skills as a Java-Script Developer where I explored various industry wide used concepts such as Query Selectors, Event-Loops, Event Listeners, Set, Map, Closure, Promises, Async-Await etc by building Case Convertor, Rock Paper Scissor Game, Password Generator etc</p>
+                            <a href="https://passwordgeneratorbyart.netlify.app" class="text-teal text-md lg:text-lg font-bold pl-5"><i class="fa fa-external-link-square text-black" aria-hidden="true"></i> passwordgeneratorbyart.netlify.app</a>
+                        </div>
+                        <div class="my-5 space-y-2">
+                            <h5 class="primary-font bg-teal text-white pl-5 py-1 font-bold text-2xl">React App</h5>
+                            <p class="font-semibold text-md lg:text-lg pl-5">Engaged in a comprehensive project utilizing the React UI Development Library, where I delved into fundamental concepts such as Rendering, Scripting, and Component-Based Architecture. My proficiency with React extends to leveraging essential hooks like use-state, use-effects, and use-callback, demonstrating adeptness in implementing widely utilized concepts within React projects.</p>
+                            <a href="https://spacexhomepage.netlify.app" class="text-teal text-md lg:text-lg font-bold pl-5"><i class="fa fa-external-link-square text-black" aria-hidden="true"></i> spacexhomepage.netlify.app</a>
+                        </div>
+                        <div class="my-5 space-y-2">
+                            <h5 class="primary-font bg-teal text-white pl-5 py-1 font-bold text-2xl">Working with Tailwind</h5>
+                            <p class="font-semibold text-md lg:text-lg pl-5">I have cloned some websites using Tailwind-CSS framework which is known for better control in styling from within the element. It can also be used along with style-sheet, However my work on cloning is limited only to the tailwind. It can be used for efficient styling and making websites better & faster </p>
+                            <a href="https://tailwindclone2byart.netlify.app/" class="text-teal text-md lg:text-lg font-bold pl-5"><i class="fa fa-external-link-square text-black" aria-hidden="true"></i> tailwindclone2byart.netlify.app/</a>
+                        </div>
+                        <div class="my-5 space-y-2">
+                            <h5 class="primary-font bg-teal text-white pl-5 py-1 font-bold text-2xl">HTML and CSS</h5>
+                            <p class="font-semibold text-md lg:text-lg pl-5">Projects purely based on HTML & CSS, building different kinds of web-pages.The features are screen responsiveness using HTML and CSS. I've utilized a range of HTML and CSS concepts like flexbox, box model, Document Object Model (DOM), media embedding, Formatting Document, CSS-Selectors, forms, decorations, meta-data, and more to create diverse web pages. These projects have been instrumental in honing my programming and web development skills, sparking my passion for the field.</p>
+                            <a href="https://landingpagebyart.netlify.app" class="text-teal text-md lg:text-lg font-bold pl-5"><i class="fa fa-external-link-square text-black" aria-hidden="true"></i> landingpagebyart.netlify.app</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-teal border" />
+                <!-- CV ( WORK ) -->
+                <div class="w-full flex flex-col justify-centerl space-y-2">
+                    <h4 class="text-left w-1/2 lg:w-1/5 primary-font text-3xl font-bold"><i class="fa fa-caret-right font-bold" aria-hidden="true"></i> Work Experience :</h4>
+                    <ul class="text-left space-y-2">
+                        <li class="font-semibold text-md lg:text-lg pl-5"><i class="fa fa-chevron-circle-right font-bold text-sm" aria-hidden="true"></i> Independently built and hosted an e-commerce application. A MERN Stack application with all the standard features -
+                            authentication, token validation, search prediction query, routing, api data management, react prop drilling and functional
+                            animations, products ﬁlter, cart management, order handeling, payment gateway and seamless design on a dark theme with
+                            frequent use of react hooks. Separate Admin and User routes were designed where admin has special accesses and rights,
+                            access to charts and statistics, User friendly interface makes it one of the best initial project for an entry level programmer.
+                            Cart, User and Product management with RESTful APIs where I managed the data gracefully with high precision and highly
+                            optimized code. </li>
+                        <li class="font-semibold text-md lg:text-lg pl-5"><i class="fa fa-chevron-circle-right font-bold text-sm" aria-hidden="true"></i> Built various projects on JavaScript for "Full Stack Web Developer Bootcamp" by iNeuron which can be found in my portfolio as well as in github. DOM manipulation, Event Listeners, Functional Programming, HOF, OOPs, Asynchronous Programming with Async-Await or Promises along with Error-Handling and Troubleshooting etc are the highlights of these assignments.</li>
+                        <li class="font-semibold text-md lg:text-lg pl-5"><i class="fa fa-chevron-circle-right font-bold text-sm" aria-hidden="true"></i> Cloned popular web-applications such as Paytm, Shopify and Rode as a challenge from Tailwind Bootcamp using Tailwind CSS. These are complex designs which are entirely based on the current format of the original pages made entirely using HTML5 and Mobile first TailwindCSS Library.  </li>
+                        <li class="font-semibold text-md lg:text-lg pl-5"><i class="fa fa-chevron-circle-right font-bold text-sm" aria-hidden="true"></i> React front end assignment to design a space-x landing page using rest APIs from the Space-X development engine. Extended CSS with React hooks and props I have utilized the API data  to make a functional landing page. CSS animations are my personal touch as per the expected theme of the company.</li>
+                        <li class="font-semibold text-md lg:text-lg pl-5"><i class="fa fa-chevron-circle-right font-bold text-sm" aria-hidden="true"></i> Concurrently pursuing aspirations in Civil Services, I have leveraged my expertise as an educator, specializing in Higher Mathematics and Applied Physics instruction.</li>
+                    </ul>
+                </div>
+                <hr class="border-teal border" />
+                <!-- CV ( EDUCATION ) -->
+                <div class="text-left flex flex-col">
+                    <h4 class="text-left lg:w-1/6 primary-font text-3xl font-bold"><i class="fa fa-caret-right font-bold" aria-hidden="true"></i> Education :</h4>
+                    <div class="flex flex-col py-2">
+                        <div class="">
+                            <h5 class="primary-font indent-5 bg-teal py-1 text-white font-bold text-xl">Graduation (2014-2018)</h5>
+                            <p class="flex flex-col indent-5 font-semibold text-md lg:text-lg">
+                                <span>Government Engineering College,</span>
+                                <span>Bilaspur (Chhattisgarh)</span>
+                                <span>B.E. in Electrical Engineering</span>
+                            </p>
+                        </div>
+                        <div class="">
+                            <h5 class="primary-font indent-5 bg-teal py-1 text-white font-bold text-xl">Civil Services Exam (2018-2022)</h5>
+                            <p class="font-semibold ml-5 text-md lg:text-lg">Engaged in rigorous preparation for civil services which is a National Level Competitve Examination, demonstrating dedication, perseverance, and commitment to personal and professional development.</p>
+                        </div>
+                        <div class="">
+                            <h5 class="primary-font indent-5 bg-teal py-1 text-white font-bold text-xl">Certification (2022-2023)</h5>
+                            <p class="flex flex-col indent-5 font-semibold text-md lg:text-lg">
+                                <span>i-Neuron</span>
+                                <span>Bengaluru, Karnataka</span>
+                                <span>Full Stack Java-Script Web Developer </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CV ( INTERESTS, LANGUAGES ) -->
+                <div class="flex flex-col border-t-2 border-teal h-60">
+                    <div class="w-full lg:w-1/2 float-left flex flex-col space-y-4 py-5">
+                        <h4 class="text-left primary-font text-3xl font-bold"><i class="fa fa-caret-right font-bold" aria-hidden="true"></i> Interests :</h4>
+                        <ul class="flex flex-row lg:flex-auto ml-5">
+                            <li class="skill-box">ART & CRAFT</li>
+                            <li class="skill-box">DRAWING</li>
+                            <li class="skill-box">TRAVELLING</li>
+                            <li class="skill-box">READING</li>
+                            <li class="skill-box">BADMINTON</li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-1/2 float-right flex flex-col space-y-4 py-4">
+                        <h4 class="text-left primary-font text-3xl font-bold"><i class="fa fa-caret-right font-bold" aria-hidden="true"></i> Languages :</h4>
+                        <ul class="flex flex-row lg:flex-auto ml-5">
+                            <li class="skill-box">ENGLISH</li>
+                            <li class="skill-box">HINDI</li>
+                            <li class="skill-box">CHHATTISGARHI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV DOWNLOAD BUTTON -->
+        <div id="resume" class="resumeDownload justify-center flex py-12">
+            <a href="" class="">
+                <button id="downloadButton" class="border-2 border-black font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
+                shadow-lg shadow-black bg-black text-white">DOWNLOAD CV</button>
+            </a>
+        </div>
+
+        <!-- APPLICATIONS -->
+        <div class="bg-black gap-2 text-bwhite text-center grid grid-cols-5 lg:grid-cols-7 w-full md:justify-between lg:p-5">
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/html5.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/css3.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/react.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/javascript.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/node-js.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/mongo.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/tailwindCSS.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/bootstrap.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/express.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/netlify.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1 border rounded-full px-1" src="./assets/vercel.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/postman.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1" src="./assets/git.png" alt=""></p>
+            <p class="p-2 text-sm lg:text-lg space-y-2 items-center grid-cols-1 flex flex-col"><img class="h-16 lg:h-20 py-1 bg-white px-1 rounded-full" src="./assets/linux.png" alt=""></p>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <h3 class="primary-font text-3xl md:text-5xl text-bwhite font-bold">Get in touch</h3>
+        <div id="contact" class="flex flex-col w-full md:w-1/2 space-y-12 text-center items-center bg-slate-950 shadow-md shadow-black rounded-sm py-12">
+            <form action="#" id="contact" class="form-contact flex flex-col py-5 md:p-6 space-y-5 w-11/12 md:w-3/4">
+                <div class="flex flex-col space-y-2">
+                    <label for="name" class="text-beige font-bold text-xl text-left">Name :</label>
+                    <input
+                        autocomplete="off"
+                        minlength="4"
+                        required id="name"
+                        type="text"
+                        placeholder="Enter your Full Name"
+                        class="indent-5 rounded-sm text-lg text-bwhite bg-bgraytrans py-2"
+                        style="text-transform: capitalize;"
+                    />
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label for="email" class="text-beige font-bold text-xl text-left">Email :</label>
+                    <input 
+                        autocomplete="off" 
+                        maxlength="25" 
+                        required id="email" 
+                        type="email" 
+                        placeholder="Your Email-id" 
+                        class="indent-5 rounded-sm text-lg text-bwhite bg-bgraytrans py-2"
+                    />
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label for="phone" class="text-beige font-bold text-xl text-left">Phone No. :</label>
+                    <input 
+                        autocomplete="off" 
+                        minlength="10" 
+                        maxlength="13" 
+                        required id="phone" 
+                        type="number" 
+                        placeholder="Your Contact Number" 
+                        class="indent-5 rounded-sm text-lg text-bwhite bg-bgraytrans py-2"
+                    />
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label for="subject" class="text-beige font-bold text-xl text-left">Subject :</label>
+                    <input 
+                        autocomplete="off" 
+                        maxlength="130" 
+                        required id="subject" 
+                        type="text" 
+                        placeholder="Enter Subject" 
+                        class="indent-5 rounded-sm text-lg text-bwhite bg-bgraytrans py-2"
+                    />
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label autocomplete="off" for="message" class="text-beige font-bold text-xl text-left">Message :</label>
+                    <textarea 
+                        id="message" 
+                        style="vertical-align:text-top" 
+                        type="text" 
+                        placeholder="Write your Message here" 
+                        class="indent-5 rounded-sm text-lg text-bwhite bg-bgraytrans py-2 h-32" 
+                        maxlength="500">
+                    </textarea>
+                </div>
+                <div class="w-full items-center">
+                    <button type="submit" id="submit" class="submit font-bold bg-beige text-black py-1 md:py-2 text-xl rounded-sm border-2 border-beige w-1/2
+                hover:bg-black hover:text-beige hover:shadow-lg hover:shadow-black mx-12 my-4">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- FIND ME HERE -->
+        <div class="flex flex-row-reverse w-full space-y-2 bg-black py-4 md:py-8 justify-between px-12 items-center">
+            <div class="">
+                <div class="w-fit border-2 border-black rounded-full object-contain h-fit overflow-hidden drop-shadow-2xl shadow-black shadow-inner">
+                    <img src="../dist/assets/arpit-clip.PNG" alt="clipart" class="framed h-96" style="--color:#0B486B" />
+                </div>
+            </div>
+            <div class="flex w-1/2 flex-col md:pl-2 space-y-2">
+                <h3 class="text-xl md:text-3xl text-red font-bold">Find me here !</h3>
+                <a href="https://portfolio-arpit.netlify.app" class="text-md flex flex-row items-center space-x-2 md:text-lg pl-2 text-bwhite"> <i class="fa fa-globe" aria-hidden="true"></i><p class="navlinks py-2">Portfolio</p></a>
+                <a href="https://github.com/Arpitxd41" class="text-md flex flex-row items-center space-x-2 md:text-lg pl-2 text-bwhite"> <i class="fa fa-github" aria-hidden="true"></i><p class="navlinks py-2">GitHub</p></a>
+                <a href="https://www.linkedin.com/in/arpittiwari237/" class="text-md flex flex-row items-center space-x-2 md:text-lg pl-2 text-bwhite"> <i class="fa fa-linkedin-square" aria-hidden="true"></i><p class="navlinks py-2">LinkedIn</p></a>
+                <a href="https://codesandbox.io/u/Arpitnt10" class="text-md flex flex-row items-center space-x-2 md:text-lg pl-2 text-bwhite"> <i class="fa fa-codepen" aria-hidden="true"></i><p class="navlinks py-2">Codesandbox</p></a>
+                <a href="https://www.freecodecamp.org/Arpitnt10" class="text-md flex flex-row items-center space-x-2 md:text-lg pl-2 text-bwhite"><i class="fa fa-free-code-camp" aria-hidden="true"></i><p class="navlinks py-2">Freecodecamp</p></a>
+                <a href="https://www.freecodecamp.org/Arpitnt10" class="text-md flex flex-row items-center space-x-2 md:text-lg pl-2 text-bwhite"><i class="fa fa-hashtag" aria-hidden="true"></i><p class="navlinks py-2">Hashnode</p></a>
+                <a href="https://" class="text-md flex flex-row items-center space-x-2 md:text-lg pl-2 text-bwhite"><i class="fa fa-instagram" aria-hidden="true"></i><p class="navlinks py-2">appynonimous_</p></a>
+            </div>
+        </div>      
+        <!-- BOTTOM LOWER -->
+        <div class="w-full text-white font-bold text-lg text-center flex items-center justify-center h-20 bg-black/40 border-y-2 border-black">
+            <p class="">Made with <i class="fa fa-heart animate-characters text-lg"></i> by <a href="" class="hover:underline mb-2">Arpit</a></p>
+        </div>
+    </div>    
+    <script src="./index.js"></script>
+</body>
+</html>
+<!-- We are limited only by our own imagination & with hardwork and sheer determination there is no limit to what one can accomplish. -->
