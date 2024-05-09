@@ -5,6 +5,9 @@
 |Last Updated Date:| 17th Oct 2023 | Updates are there to be added to this project |
 |Upcoming Modifications| -- | Project Frontend to be switched to React |
 
+---
+
+![image](./dist/assets/portfolio.jpeg)
 
 ---
 
@@ -40,5 +43,5 @@ My mission is to leverage my knowledge, creativity, and commitment to deliver in
 
 - `iconscout.com` for the elements, icons and logos that are here used in the project
 - `codepen` for the animations
-- `freefrontend.com` for the animation ideas that I got for the projec
+- `freefrontend.com` for the animation ideas that I got for the project
 
